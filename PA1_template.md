@@ -19,7 +19,7 @@ hist(total_by_day$steps, main = "Number of Steps", xlab = "Total number of steps
     col = "light blue")
 ```
 
-![plot of chunk plot 1](figure/p1.png) 
+![plot of chunk plot 1](figures/p1.png) 
 
 ```r
 
@@ -47,7 +47,7 @@ plot(average_by_interval$interval, average_by_interval$steps, type = "l", col = 
     xlab = "5-minute interval", ylab = "Average number of steps taken", main = "Average daily activity pattern")
 ```
 
-![plot of chunk plot 2](figure/p2.png) 
+![plot of chunk plot 2](figures/p2.png) 
 
 ```r
 
@@ -96,7 +96,7 @@ hist(new_total_by_day$steps, main = "Number of Steps", xlab = "Total number of s
     col = "light blue", )
 ```
 
-![plot of chunk plot 3](figure/p3.png) 
+![plot of chunk plot 3](figures/p3.png) 
 
 ```r
 # mean and median total number of steps taken per day
@@ -138,7 +138,7 @@ average_by_interval_wk <- ddply(data_with_weekdays, .(interval, wk), summarise,
 xyplot(steps ~ interval | wk, data = average_by_interval_wk, layout = c(1, 2), 
     type = "l")
 ```
-![plot of chunk plot 4](figure/p4.png) 
+![plot of chunk plot 4](figures/p4.png) 
 
 
 

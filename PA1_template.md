@@ -19,7 +19,7 @@ hist(total_by_day$steps, main = "Number of Steps", xlab = "Total number of steps
     col = "light blue")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk plot 1](figure/p1.png) 
 
 ```r
 
@@ -47,7 +47,7 @@ plot(average_by_interval$interval, average_by_interval$steps, type = "l", col = 
     xlab = "5-minute interval", ylab = "Average number of steps taken", main = "Average daily activity pattern")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk plot 2](figure/p2.png) 
 
 ```r
 
@@ -96,7 +96,7 @@ hist(new_total_by_day$steps, main = "Number of Steps", xlab = "Total number of s
     col = "light blue", )
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk plot 3](figure/p3.png) 
 
 ```r
 # mean and median total number of steps taken per day
@@ -121,7 +121,8 @@ total_steps2 <- sum(merged$steps)
 total_diff <- total_steps2 - total_steps1[]
 ```
 
-Mean values didn't change, because I supplied interval averge for the given interval, so total average didn't change. Histogram and median changed somewhat. filling values added total of 8.613 &times; 10<sup>4</sup> steps.
+Mean values didn't change, because I supplied interval averge for the given interval, so total average didn't change. Histogram and median changed somewhat. 
+filling values added total of 8.613 &times; 10<sup>4</sup> steps.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -138,7 +139,7 @@ xyplot(steps ~ interval | wk, data = average_by_interval_wk, layout = c(1, 2),
     type = "l")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot of chunk plot 4](figure/p4.png) 
 
 
 

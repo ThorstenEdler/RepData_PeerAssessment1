@@ -138,8 +138,8 @@ average_by_interval_wk <- ddply(data_with_weekdays, .(interval, wk), summarise,
 xyplot(steps ~ interval | wk, data = average_by_interval_wk, layout = c(1, 2), 
     type = "l")
 ```
-
 ![plot of chunk plot 4](figure/p4.png) 
+
 
 
 

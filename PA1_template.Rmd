@@ -52,7 +52,7 @@ total_steps1 <- sum(clean_data$steps)
 total_steps2 <- sum(merged$steps)
 total_diff <- total_steps2 -total_steps1 []
 ```
-Mean values didn't change, because I supplied interval averge for the given interval, so total average didn't change. Histogram and median changed somewhat. filling values added total of `r total_diff` steps.
+Added total steps `r total_diff`.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 ```{r}
